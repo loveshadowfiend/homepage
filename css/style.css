@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Monaco';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Monaco'), url('fonts/Monaco.woff') format('woff');
+}
+
+body {
+    background-color: #e8e8d3;
+    color: #151515;
+    font-family: Monaco;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-weight: normal;
+}
+
+ul {
+    margin-top: 10px;
+    padding: 0;
+}
+
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-top: 5px;
+    background-color: #151515;
+    color: #e8e8d3;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #151515;
+}
+
+#shiba {
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+}
+
+.socials {
+    margin-top: auto;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work {
+    font-style: italic;
+    padding-right: 1.5em;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 16px; }
+p { margin: 0; margin-top: 10px; margin-bottom: 10px; }
+ul li { display: inline-block; }
+td { margin: 0; }
+i { padding-left: 20px; }
+a { color: #151515; text-decoration: none; }
+.about { text-align: justify; }
+.works-list { margin-top: 10px; }
+.container { margin-top: 0; }
+
+@media screen and (max-width:480px) {
+    #shiba { 
+        display: none;
+    }
+}
