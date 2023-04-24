@@ -65,9 +65,3 @@ a { color: #151515; text-decoration: none; }
 .about { text-align: justify; }
 .works-list { margin-top: 10px; }
 .container { margin-top: 0; }
-
-@media screen and (max-width:480px) {
-    #shiba { 
-        display: none;
-    }
-}
