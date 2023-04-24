@@ -9,8 +9,7 @@ body {
     background-color: #e8e8d3;
     color: #151515;
     font-family: Monaco;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin: 0;
     font-weight: normal;
 }
 
@@ -37,7 +36,6 @@ li {
 #shiba {
     width: 100%;
     height: 50vh;
-    margin: auto;
 }
 
 .socials {
@@ -55,13 +53,19 @@ li {
     padding-right: 1.5em;
 }
 
+
+/* scary shit!! */
 h1 { font-size: 24px; }
 h2 { font-size: 16px; }
 p { margin: 0; margin-top: 10px; margin-bottom: 10px; }
 ul li { display: inline-block; }
 td { margin: 0; }
-i { padding-left: 20px; }
+.socials a:nth-child(2) { padding-left: 20px; }
 a { color: #151515; text-decoration: none; }
 .about { text-align: justify; }
 .works-list { margin-top: 10px; }
-.container { margin-top: 0; }
+.intro { margin-top: 5vh; margin-left: 10vw; margin-right: 10vw; }
+.about { margin-left: 10vw; margin-right: 10vw; }
+.works { margin-left: 10vw; margin-right: 10vw; }
+.skills { margin-left: 10vw; margin-right: 10vw; }
+hr { margin-left: 10vw; margin-right: 10vw; }
