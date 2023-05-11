@@ -1,7 +1,6 @@
 var container = document.getElementById("shiba")
-var width = container.clientWidth;
+var width = document.body.clientWidth;
 var height = container.clientHeight;
-
 var scene = new THREE.Scene();
 
 var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -21,14 +20,20 @@ controls.target = new THREE.Vector3(0, 0.5, 0);
 controls.enableZoom = false;
 controls.update();
 
-const maxAnisotropy = renderer.capabilities.getMaxAnisotropy();
-
 var loader = new THREE.GLTFLoader();
 loader.load('gltf/shiba/shiba.gltf', function (gltf) {
     scene.add(gltf.scene);
 });
 
 animate();
+
+// fix an issue when 'document.body.clientWidth' returns wrong width at the beginning of the html
+addEventListener("load", function () {
+    camera.aspect = document.body.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( document.body.clientWidth, container.clientHeight);
+})
 
 function animate() {
     requestAnimationFrame(animate);
