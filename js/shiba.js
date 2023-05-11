@@ -17,7 +17,7 @@ var controls = new THREE.OrbitControls(camera, renderer.domElement);
 controls.autoRotate = true;
 camera.position.set(2.7, 1.7, 2.8);
 controls.target = new THREE.Vector3(0, 0.5, 0);
-controls.enableZoom = false;
+controls.enabled = false;
 controls.update();
 
 var loader = new THREE.GLTFLoader();
