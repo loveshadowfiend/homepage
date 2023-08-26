@@ -2,7 +2,7 @@
     font-family: 'Monaco';
     font-style: normal;
     font-weight: normal;
-    src: local('Monaco'), url('../homepage/fonts/Monaco.woff') format('woff');
+    src: local('Monaco'), url('../fonts/Monaco.woff') format('woff');
 }
 
 body {
